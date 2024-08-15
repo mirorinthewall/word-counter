@@ -1,0 +1,8 @@
+def word_count(filename)
+  text = File.read(filename)
+  words = text.split
+  word_count = words.length
+  "Количество слов в файле '#{filename}': #{word_count}"
+end
+
+puts word_count("example.txt")
